@@ -1,0 +1,9 @@
+grant{
+permission javax.security.auth.AuthPermission "createLoginContext.Login999";
+permission javax.security.auth.AuthPermission "doAsPrivileged";
+};
+grant principal com.sun.security.auth.UserPrincipal "HP" {
+permission java.util.PropertyPermission "user.*", "read";
+permission java.util.PropertyPermission "computer.name", "read";
+permission java.util.PropertyPermission "user.name", "read";
+};
