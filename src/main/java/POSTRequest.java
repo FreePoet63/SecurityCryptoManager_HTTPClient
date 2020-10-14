@@ -15,8 +15,9 @@ public class POSTRequest {
 
     private static void Json_Request() throws IOException {
         String url = "https://superhero.qa-test.csssr.com/superheroes";
-        String JsoN = "{\"id\":30,\"fullName\":\"Doctor Nata\",\"birthDate\":\"1963-07-18\",\"city\":\"Moscow\",\"mainSkill\":\"Magic\",\"gender\":\"W\",\"phone\":null}";
-
+        String JsoN = "{\"id\":30,\"fullName\":\"Doctor Nata\"," +
+                "\"birthDate\":\"1963-07-18\",\"city\":\"Moscow\"," +
+                "\"mainSkill\":\"Magic\",\"gender\":\"W\",\"phone\":null}";
         try {
             URL url5 = new URL(url);
             HttpURLConnection conn = (HttpURLConnection) url5.openConnection();
