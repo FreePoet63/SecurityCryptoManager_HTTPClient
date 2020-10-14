@@ -12,7 +12,7 @@ public class GETRequest {
     public static void main(String[] args) throws IOException {
         try {
             CloseableHttpClient client = HttpClients.createDefault();
-            CloseableHttpResponse response = client.execute(new HttpGet("https://superhero.qa-test.csssr.com/superheroes"));
+            CloseableHttpResponse response = client.execute(new HttpGet("https://superhero.qa-test.csssr.com/superheroes/200"));
 
             HttpEntity entity = response.getEntity();
 
